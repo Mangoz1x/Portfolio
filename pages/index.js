@@ -8,15 +8,16 @@ import { TbBrandNpm } from "react-icons/tb";
 
 const Main = () => {
   const heroTitle = TypingEffect(["developer", "designer", "student"]);
-  const LanguageLibrary = { 
-    PHP: "#4F5D95", 
-    JavaScript: "#b8a727", 
-    CSS: "#563d7c", 
+  const LanguageLibrary = {
+    PHP: "#4F5D95",
+    JavaScript: "#b8a727",
+    CSS: "#563d7c",
     HTML: "#e34c26",
-    TailWind: "rgb(14 165 233)", 
+    TailwindCSS: "rgb(14 165 233)",
     BootStrap: "712cf9",
     MySQL: "#000",
-    MongoDB: "rgb(17, 97, 73)"
+    MongoDB: "rgb(17, 97, 73)",
+    NextJS: "#FFF"
   };
 
   return (
@@ -81,46 +82,15 @@ const Main = () => {
         </div>
       </div>
 
-      {/* <div className="z-50 h-[100vh]">
-        <div className="w-full h-full bg-gray-950 flex flex-col justify-center items-center">
-          <div className="flex flex-col h-full justify-center md:items-center w-full px-6 sm:px-0 sm:w-3/4 md:w-2/3">
-            <motion.h1
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ ease: "easeOut", duration: 0.7, delay: 0.1 }}
-              className="w-fit h-fit md:mx-auto p-0 text-white text-5xl font-bold"
-            >
-              ABOUT ME
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ ease: "easeOut", duration: 0.7, delay: 0.3 }}
-
-              className="text-gray-400 mt-4 md:text-center"
-            >
-              I'm a full-stack developer with a diverse skill set,
-              including expertise in JavaScript, MongoDB, HTML, CSS,
-              Python, and AI. I'm passionate about creating custom
-              web applications and pursuing my hobbies, like DJing
-              and 3D printing. With a focus on quality and attention
-              to detail, I'm committed to delivering results that
-              exceed expectations and help my clients achieve their
-              goals.
-            </motion.p>
-          </div>
-        </div>
-      </div> */}
-
-      <div className="h-[100vh] w-full bg-gray-950">
+      <div className="min-h-[100vh] h-full w-full bg-gray-950">
         <div className="p-10 flex w-full h-full flex-col">
-          <h1 className="text-5xl font-bold text-white text-left w-full mb-8">My projects</h1>
+          <h1 className="text-5xl font-bold text-white text-right w-full mb-8">Top projects</h1>
 
           <div className="w-full grid grid-cols-3 h-fit gap-4">
             {Projects.map(project => (
               <motion.div
                 initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
+                animate={{ opacity: 1 }}
                 transition={{ ease: "easeOut", duration: 0.5, delay: project.id * 0.15 }}
 
                 key={`project-${project.id}`}
@@ -142,7 +112,8 @@ const Main = () => {
                     {project?.languages && project.languages.map(language => (
                       <div className="rounded-md h-fit w-fit py-1 px-2 text-white" style={{
                         backgroundColor: LanguageLibrary[language],
-                        fontSize: "8px"
+                        fontSize: "8px",
+                        color: language == "NextJS" ? "#000" : "#FFF"
                       }} key={`language-${language}-project-${project.title}`}>
                         {language}
                       </div>
@@ -150,9 +121,11 @@ const Main = () => {
                   </div>
 
                   <div className="w-full h-fit flex gap-3 mt-4">
-                    <a href={project.github} className="w-6 h-6" target="_blank">
-                      <BsGithub className="w-6 h-6 text-gray-300" />
-                    </a>
+                    {project.github && (
+                      <a href={project.github} className="w-6 h-6" target="_blank">
+                        <BsGithub className="w-6 h-6 text-gray-300" />
+                      </a>
+                    )}
                     {project.link && (
                       <a href={project.link} className="w-6 h-6" target="_blank">
                         <BsLink45Deg className="w-6 h-6 text-gray-300" />
@@ -167,6 +140,49 @@ const Main = () => {
                 </div>
               </motion.div>
             ))}
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ easy: "easeOut", duration: 0.5, delay: Projects.length * 0.15 }}
+              className="bg-gray-950 overflow-hidden flex justify-center items-center rounded-lg w-full h-full relative"
+            >
+              <a href="https://github.com/Mangoz1x?tab=repositories" target="_blank" className="bg-blue-500 flex gap-4 px-6 py-3 rounded-lg">
+                View More
+                <BsGithub className="w-6 h-6 text-white" />
+              </a>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+
+      <div className="z-50 h-[100vh]">
+        <div className="w-full h-full bg-gray-950 flex flex-col justify-center items-center">
+          <div className="flex flex-col h-full justify-center md:items-center w-full px-6 sm:px-0 sm:w-3/4 md:w-2/3">
+            <motion.h1
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 0.5, delay: 0 }}
+              className="w-fit h-fit md:mx-auto p-0 text-white text-5xl font-bold"
+            >
+              ABOUT ME
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 0.5, delay: 0.2 }}
+
+              className="text-gray-400 mt-4 md:text-center"
+            >
+              I'm a full-stack developer with a diverse skill set,
+              including expertise in JavaScript, MongoDB, HTML, CSS,
+              Python, and AI. I'm passionate about creating custom
+              web applications and pursuing my hobbies, like DJing
+              and 3D printing. With a focus on quality and attention
+              to detail, I'm committed to delivering results that
+              exceed expectations and help my clients achieve their
+              goals.
+            </motion.p>
           </div>
         </div>
       </div>

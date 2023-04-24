@@ -58,5 +58,25 @@
         "npmjs": null,
         "image": null,
         "id": 6
+    },
+    {
+        "title": "Portfolio",
+        "description": "My own personal portfolio.",
+        "github": "https://github.com/Mangoz1x/Portfolio",
+        "languages": ["NextJS", "JavaScript", "TailwindCSS"],
+        "link": null,
+        "npmjs": null,
+        "image": null,
+        "id": 7
+    },
+    {
+        "title": "JustPix",
+        "description": "A project for people to upload, edit, and select product specifications to print an image.",
+        "github": null,
+        "languages": ["NextJS", "JavaScript", "MongoDB", "TailwindCSS"],
+        "link": "https://justpix.mangoz1x.com",
+        "npmjs": null,
+        "image": null,
+        "id": 7
     }
 ]
