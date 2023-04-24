@@ -1,25 +1,36 @@
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import styles from "../styles/index.module.css";
 import HeroPanels from "../data/HeroPanels.json";
+import Projects from "../data/Projects.json";
 import { motion } from "framer-motion"
 import { TypingEffect } from "@component/helpers/typing";
+import { BsGithub, BsLink45Deg } from "react-icons/bs";
+import { TbBrandNpm } from "react-icons/tb";
 
 const Main = () => {
   const heroTitle = TypingEffect(["developer", "designer", "student"]);
+  const LanguageLibrary = { 
+    PHP: "#4F5D95", 
+    JavaScript: "#b8a727", 
+    CSS: "#563d7c", 
+    HTML: "#e34c26",
+    TailWind: "rgb(14 165 233)", 
+    BootStrap: "712cf9",
+    MySQL: "#000",
+    MongoDB: "rgb(17, 97, 73)"
+  };
 
   return (
-    <Parallax pages={3} className="bg-white">
-      <ParallaxLayer speed={1} sticky={{ start: 0, end: 1 }} className="flex items-center">
+    <div className="bg-white h-fit w-full">
+      <div className="flex items-center h-[100vh]">
         <div className="w-full h-full grid grid-cols-2">
-          <div className="md:col-span-1 col-span-2 w-full h-full p-10 flex justify-center flex-col">
-            <h1 className="text-4xl sm:text-5xl font-bold text-black">
-              Hi i'm Ryan, <br />
+          <div className="md:col-span-1 col-span-2 w-full h-full p-10 flex justify-center flex-col bg-gray-950">
+            <h2 className="text-blue-500 font-bold text-xl">Hi i'm Ryan,</h2>
+            <h1 className="text-4xl sm:text-5xl font-bold text-white">
               I am a <span>{heroTitle}</span>
             </h1>
-            <p className="text-gray-700 mt-4">
-              Meet a full-stack developer with a passion for innovation, sports,
-              and music, with expertise in JavaScript, MongoDB, HTML, CSS, and a range of
-              other programming languages and technologies.
+            <p className="text-gray-400 mt-4">
+              I'm full-stack developer with a passion for innovation, sports,
+              and music, with lots of expertise in various technologies & programming langauges.
             </p>
 
             {/* Skills */}
@@ -42,7 +53,7 @@ const Main = () => {
             </div>
           </div>
 
-          <div className="w-full h-full p-10 bg-black hidden md:flex flex-col justify-evenly">
+          <div className="w-full h-full p-10 bg-gray-950 hidden md:flex flex-col justify-evenly">
             {HeroPanels.map((panel, i) => (
               <div key={`panel-${i}`} className="w-full h-fit flex lg:flex-row flex-col gap-3 lg:gap-4">
                 {panel.map((section, z) => (
@@ -68,13 +79,26 @@ const Main = () => {
             ))}
           </div>
         </div>
-      </ParallaxLayer>
+      </div>
 
-      <ParallaxLayer speed={1} sticky={{ start: 1, end: 2 }} offset={1} className="z-50">
-        <div className="w-full h-full bg-white flex flex-col justify-center items-center">
-          <div className="flex flex-col h-full justify-center items-center w-1/2">
-            <h1 className="w-fit h-fit mx-auto p-0 text-black text-5xl font-bold">ABOUT ME</h1>
-            <p className="text-gray-700 mt-4 text-center">
+      {/* <div className="z-50 h-[100vh]">
+        <div className="w-full h-full bg-gray-950 flex flex-col justify-center items-center">
+          <div className="flex flex-col h-full justify-center md:items-center w-full px-6 sm:px-0 sm:w-3/4 md:w-2/3">
+            <motion.h1
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 0.7, delay: 0.1 }}
+              className="w-fit h-fit md:mx-auto p-0 text-white text-5xl font-bold"
+            >
+              ABOUT ME
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 0.7, delay: 0.3 }}
+
+              className="text-gray-400 mt-4 md:text-center"
+            >
               I'm a full-stack developer with a diverse skill set,
               including expertise in JavaScript, MongoDB, HTML, CSS,
               Python, and AI. I'm passionate about creating custom
@@ -83,11 +107,70 @@ const Main = () => {
               to detail, I'm committed to delivering results that
               exceed expectations and help my clients achieve their
               goals.
-            </p>
+            </motion.p>
           </div>
         </div>
-      </ParallaxLayer>
-    </Parallax>
+      </div> */}
+
+      <div className="h-[100vh] w-full bg-gray-950">
+        <div className="p-10 flex w-full h-full flex-col">
+          <h1 className="text-5xl font-bold text-white text-left w-full mb-8">My projects</h1>
+
+          <div className="w-full grid grid-cols-3 h-fit gap-4">
+            {Projects.map(project => (
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ ease: "easeOut", duration: 0.5, delay: project.id * 0.15 }}
+
+                key={`project-${project.id}`}
+                className="bg-gray-900 overflow-hidden rounded-lg w-full h-full relative"
+              >
+                {project.image && (
+                  <div className="absolute w-full h-full top-0 opacity-25" style={{
+                    backgroundImage: `url("${project.image}")`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center"
+                  }} />
+                )}
+
+                <div className="w-full h-full p-5 relative top-0 flex flex-col">
+                  <h2 className="text-white text-4xl">{project.title}</h2>
+                  <p className="text-gray-300 mt-4 text-sm">{project.description}</p>
+
+                  <div className="w-full h-fit flex gap-2 mt-auto pt-4">
+                    {project?.languages && project.languages.map(language => (
+                      <div className="rounded-md h-fit w-fit py-1 px-2 text-white" style={{
+                        backgroundColor: LanguageLibrary[language],
+                        fontSize: "8px"
+                      }} key={`language-${language}-project-${project.title}`}>
+                        {language}
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="w-full h-fit flex gap-3 mt-4">
+                    <a href={project.github} className="w-6 h-6" target="_blank">
+                      <BsGithub className="w-6 h-6 text-gray-300" />
+                    </a>
+                    {project.link && (
+                      <a href={project.link} className="w-6 h-6" target="_blank">
+                        <BsLink45Deg className="w-6 h-6 text-gray-300" />
+                      </a>
+                    )}
+                    {project.npmjs && (
+                      <a href={project.npmjs} className="w-6 h-6" target="_blank">
+                        <TbBrandNpm className="w-6 h-6 text-gray-300" />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 

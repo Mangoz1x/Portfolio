@@ -1,0 +1,62 @@
+[
+    {
+        "title": "GitAutoDeploy",
+        "description": "GitAutoDeploy will listen for commits to your repository and if one is detected will automatically clone the repo and run scripts that you define (e.g. npm run build, npm start)",
+        "github": "https://github.com/Mangoz1x/GitAutoDeploy",
+        "languages": ["JavaScript"],
+        "link": null,
+        "npmjs": "https://www.npmjs.com/package/@mangoz/git-auto-deploy",
+        "image": null,
+        "id": 1
+    },
+    {
+        "title": "LocalDB",
+        "description": "A local json database that uses fs to run opperations extremely fast. It is designed for rapid updating and mass data retrieval.",
+        "github": "https://github.com/Mangoz1x/LocalDB",
+        "languages": ["JavaScript"],
+        "link": null,
+        "npmjs": "https://www.npmjs.com/package/localdb-json",
+        "image": null,
+        "id": 2
+    },
+    {
+        "title": "NodeJS-FileUpload",
+        "description": "A NodeJS, MySQL powered file uploading application that allows for multiple CDNs.",
+        "github": "https://github.com/Mangoz1x/NodeJS-FileUpload",
+        "link": "https://mangoz1x.com",
+        "languages": ["JavaScript", "MySQL", "MongoDB", "CSS", "HTML"],
+        "npmjs": null,
+        "image": null,
+        "id": 3
+    },
+    {
+        "title": "MangoDB",
+        "description": "An easy to use MongoDB ORM, async, easily manageable, useful when you want to make changes to the functionality of your database queries without rewriting lots of code.",
+        "github": "https://github.com/Mangoz1x/MangoDB",
+        "languages": ["MongoDB", "JavaScript"],
+        "link": null,
+        "npmjs": null,
+        "image": null,
+        "id": 4
+    },
+    {
+        "title": "JSON2SQL",
+        "description": "A MySQL ODM, async, easily manageable, useful when you want to make changes to the functionality of your database queries without rewriting lots of code. Makes MySQL queries JSON based for simplicity.",
+        "github": "https://github.com/Mangoz1x/JSON2SQL",
+        "languages": ["JavaScript", "MySQL"],
+        "link": null,
+        "npmjs": null,
+        "image": null,
+        "id": 5
+    },
+    {
+        "title": "PHP-FileUpload",
+        "description": "A MySQL, PHP based file uploading site with file sharing, folder sharing, and many more features.",
+        "github": "https://github.com/Mangoz1x/PHP-FileUpload",
+        "languages": ["PHP", "MySQL", "JavaScript", "CSS", "HTML"],
+        "link": null,
+        "npmjs": null,
+        "image": null,
+        "id": 6
+    }
+]

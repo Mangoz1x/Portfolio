@@ -4,7 +4,7 @@
             "title": "NodeJS",
             "description": "3+ years of experience",
             "border": "#853c3c",
-            "color": "#1c1c1c",
+            "color": "#030712",
             "width": "3/5",
             "id": 1
         },
@@ -12,7 +12,7 @@
             "title": "JavaScript",
             "description": "4+ years of experience",
             "border": "#916e3d",
-            "color": "#1c1c1c",
+            "color": "#030712",
             "width": "2/5",
             "id": 2
         }
@@ -22,7 +22,7 @@
             "title": "MongoDB",
             "description": "1+ year of experience",
             "border": "#606632",
-            "color": "#1c1c1c",
+            "color": "#030712",
             "width": "2/5",
             "id": 3
         },
@@ -30,7 +30,7 @@
             "title": "MySQL",
             "description": "2+ years of experience",
             "border": "#3c6632",
-            "color": "#1c1c1c",
+            "color": "#030712",
             "width": "3/5",
             "id": 4
         }
@@ -40,7 +40,7 @@
             "title": "TailwindCSS",
             "description": "6 months of experience",
             "border": "#32665d",
-            "color": "#1c1c1c",
+            "color": "#030712",
             "width": "3/5",
             "id": 5
         },
@@ -48,7 +48,7 @@
             "title": "Bootstrap",
             "description": "4 months of experience",
             "border": "#324366",
-            "color": "#1c1c1c",
+            "color": "#030712",
             "width": "2/5",
             "id": 6
         }
@@ -58,7 +58,7 @@
             "title": "PHP",
             "description": "1+ year of experience",
             "border": "#4b3266",
-            "color": "#1c1c1c",
+            "color": "#030712",
             "width": "2/5",
             "id": 7
         },
@@ -66,7 +66,7 @@
             "title": "React Native",
             "description": "1+ year of experience",
             "border": "#663261",
-            "color": "#1c1c1c",
+            "color": "#030712",
             "width": "3/5",
             "id": 8
         }
@@ -76,7 +76,7 @@
             "title": "NextJS",
             "description": "1+ year of experience",
             "border": "#66323f",
-            "color": "#1c1c1c",
+            "color": "#030712",
             "width": "3/5",
             "id": 9
         },
@@ -84,7 +84,7 @@
             "title": "Python",
             "description": "6 months of experience",
             "border": "#804674",
-            "color": "#1c1c1c",
+            "color": "#030712",
             "width": "2/5",
             "id": 10
         }
