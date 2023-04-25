@@ -21,7 +21,7 @@ const Main = () => {
   };
 
   return (
-    <div className="bg-white h-fit w-full">
+    <div className="bg-gray-950 h-fit w-full">
       <div className="flex items-center h-[100vh]">
         <div className="w-full h-full grid grid-cols-2">
           <div className="md:col-span-1 col-span-2 w-full h-full p-10 flex justify-center flex-col bg-gray-950">
@@ -83,10 +83,10 @@ const Main = () => {
       </div>
 
       <div className="min-h-[100vh] h-full w-full bg-gray-950">
-        <div className="p-10 flex w-full h-full flex-col">
-          <h1 className="text-5xl font-bold text-white text-right w-full mb-8">Top projects</h1>
+        <div className="px-4 md:px-10 p-10 flex w-full h-full flex-col">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white text-right w-full mb-8">top projects</h1>
 
-          <div className="w-full grid grid-cols-3 h-fit gap-4">
+          <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 h-fit gap-4">
             {Projects.map(project => (
               <motion.div
                 initial={{ opacity: 0 }}
@@ -94,7 +94,7 @@ const Main = () => {
                 transition={{ ease: "easeOut", duration: 0.5, delay: project.id * 0.15 }}
 
                 key={`project-${project.id}`}
-                className="bg-gray-900 overflow-hidden rounded-lg w-full h-full relative"
+                className="bg-gray-950 border-gray-800 border overflow-hidden rounded-lg w-full h-full relative"
               >
                 {project.image && (
                   <div className="absolute w-full h-full top-0 opacity-25" style={{
@@ -105,7 +105,7 @@ const Main = () => {
                 )}
 
                 <div className="w-full h-full p-5 relative top-0 flex flex-col">
-                  <h2 className="text-white text-4xl">{project.title}</h2>
+                  <h2 className="text-white text-3xl" style={{ fontFamily: "Open Sans" }}>{project.title}</h2>
                   <p className="text-gray-300 mt-4 text-sm">{project.description}</p>
 
                   <div className="w-full h-fit flex gap-2 mt-auto pt-4">
@@ -157,22 +157,22 @@ const Main = () => {
       </div>
 
       <div className="z-50 h-[100vh]">
-        <div className="w-full h-full bg-gray-950 flex flex-col justify-center items-center">
-          <div className="flex flex-col h-full justify-center md:items-center w-full px-6 sm:px-0 sm:w-3/4 md:w-2/3">
+        <div className="w-full h-full bg-gray-950 flex flex-col p-10">
+          <div className="flex flex-col h-full w-full px-6 sm:px-0 sm:w-3/4 md:w-2/3">
             <motion.h1
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ ease: "easeOut", duration: 0.5, delay: 0 }}
-              className="w-fit h-fit md:mx-auto p-0 text-white text-5xl font-bold"
+              className="w-fit h-fit p-0 text-white text-4xl sm:text-5xl font-bold"
             >
-              ABOUT ME
+              about me
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ ease: "easeOut", duration: 0.5, delay: 0.2 }}
 
-              className="text-gray-400 mt-4 md:text-center"
+              className="text-gray-400 mt-4"
             >
               I'm a full-stack developer with a diverse skill set,
               including expertise in JavaScript, MongoDB, HTML, CSS,
@@ -183,6 +183,17 @@ const Main = () => {
               exceed expectations and help my clients achieve their
               goals.
             </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ ease: "easeOut", duration: 0.5, delay: 0.4 }}
+              className="w-fit h-fit mt-8"
+            > 
+              <a href="https://github.com/Mangoz1x/" target="_blank">
+                <BsGithub className="w-8 h-8 text-white" />
+              </a>
+            </motion.div>
           </div>
         </div>
       </div>
