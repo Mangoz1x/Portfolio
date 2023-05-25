@@ -7,7 +7,7 @@
         "languages": ["NextJS", "JavaScript", "MongoDB", "TailwindCSS"],
         "link": "https://justpix.mangoz1x.com",
         "npmjs": null,
-        "image": "/images/justpix.png",
+        "image": "/images/justpix.PNG",
         "id": 8
     },
     {
@@ -18,7 +18,7 @@
         "date": "2023",
         "link": null,
         "npmjs": null,
-        "image": "/images/portfolio.png",
+        "image": "/images/portfolio.PNG",
         "id": 7
     },
     {
@@ -29,7 +29,7 @@
         "date": "2021-2022",
         "languages": ["JavaScript", "MySQL", "MongoDB", "CSS", "HTML"],
         "npmjs": null,
-        "image": "/images/mangoz1x.png",
+        "image": "/images/mangoz1x.PNG",
         "id": 3
     },
     {
@@ -39,7 +39,7 @@
         "languages": ["PHP", "MySQL", "JavaScript", "CSS", "HTML"],
         "link": "https://phpupload.mangoz1x.com/Site/Upl/upload",
         "npmjs": null,
-        "image": "/images/phpupload.png",
+        "image": "/images/phpupload.PNG",
         "date": "2020-2021",
         "id": 6
     },
