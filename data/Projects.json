@@ -3,6 +3,7 @@
         "title": "JustPix",
         "description": "A project for people to upload, edit, and select product specifications to print an image.",
         "github": null,
+        "date": "2022-CURRENT",
         "languages": ["NextJS", "JavaScript", "MongoDB", "TailwindCSS"],
         "link": "https://justpix.mangoz1x.com",
         "npmjs": null,
@@ -14,6 +15,7 @@
         "description": "My own personal portfolio.",
         "github": "https://github.com/Mangoz1x/Portfolio",
         "languages": ["NextJS", "JavaScript", "TailwindCSS"],
+        "date": "2023",
         "link": null,
         "npmjs": null,
         "image": "/images/portfolio.png",
@@ -24,6 +26,7 @@
         "description": "A NodeJS, MySQL powered file uploading application that allows for multiple CDNs.",
         "github": "https://github.com/Mangoz1x/NodeJS-FileUpload",
         "link": "https://mangoz1x.com",
+        "date": "2021-2022",
         "languages": ["JavaScript", "MySQL", "MongoDB", "CSS", "HTML"],
         "npmjs": null,
         "image": "/images/mangoz1x.png",
@@ -37,6 +40,7 @@
         "link": "https://phpupload.mangoz1x.com/Site/Upl/upload",
         "npmjs": null,
         "image": "/images/phpupload.png",
+        "date": "2020-2021",
         "id": 6
     },
     {
@@ -45,6 +49,7 @@
         "github": "https://github.com/Mangoz1x/GitAutoDeploy",
         "languages": ["JavaScript"],
         "link": null,
+        "date": "2023",
         "npmjs": "https://www.npmjs.com/package/@mangoz/git-auto-deploy",
         "image": "https://thumbs.dreamstime.com/b/illustration-cool-multicolored-pattern-perfect-wallpapers-backgrounds-184149665.jpg",
         "id": 1
@@ -55,6 +60,7 @@
         "github": "https://github.com/Mangoz1x/LocalDB",
         "languages": ["JavaScript"],
         "link": null,
+        "date": "2022",
         "npmjs": "https://www.npmjs.com/package/localdb-json",
         "image": null,
         "id": 2
@@ -64,6 +70,7 @@
         "description": "An easy to use MongoDB ORM, async, easily manageable, useful when you want to make changes to the functionality of your database queries without rewriting lots of code.",
         "github": "https://github.com/Mangoz1x/MangoDB",
         "languages": ["MongoDB", "JavaScript"],
+        "date": "2022",
         "link": null,
         "npmjs": null,
         "image": null,
@@ -74,6 +81,7 @@
         "description": "A MySQL ODM, async, easily manageable, useful when you want to make changes to the functionality of your database queries without rewriting lots of code. Makes MySQL queries JSON based for simplicity.",
         "github": "https://github.com/Mangoz1x/JSON2SQL",
         "languages": ["JavaScript", "MySQL"],
+        "date": "2022",
         "link": null,
         "npmjs": null,
         "image": null,

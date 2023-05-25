@@ -220,7 +220,10 @@ const Main = () => {
                   </div>
 
                   <div>
-                    <h2 className="text-lg font-bold font-inter">{project.title}</h2>
+                    <h2 className="text-lg font-bold font-inter">
+                      {project.title}
+                      <span className="text-lg text-gray-600 text-sm"> • {project?.date}</span>
+                    </h2>
 
                     <p className="text-gray-400 mt-2 text-md">
                       {project.description}
