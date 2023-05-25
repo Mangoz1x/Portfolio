@@ -1,12 +1,52 @@
 [
     {
+        "title": "JustPix",
+        "description": "A project for people to upload, edit, and select product specifications to print an image.",
+        "github": null,
+        "languages": ["NextJS", "JavaScript", "MongoDB", "TailwindCSS"],
+        "link": "https://justpix.mangoz1x.com",
+        "npmjs": null,
+        "image": "/images/justpix.png",
+        "id": 8
+    },
+    {
+        "title": "Portfolio",
+        "description": "My own personal portfolio.",
+        "github": "https://github.com/Mangoz1x/Portfolio",
+        "languages": ["NextJS", "JavaScript", "TailwindCSS"],
+        "link": null,
+        "npmjs": null,
+        "image": "/images/portfolio.png",
+        "id": 7
+    },
+    {
+        "title": "NodeJS-FileUpload",
+        "description": "A NodeJS, MySQL powered file uploading application that allows for multiple CDNs.",
+        "github": "https://github.com/Mangoz1x/NodeJS-FileUpload",
+        "link": "https://mangoz1x.com",
+        "languages": ["JavaScript", "MySQL", "MongoDB", "CSS", "HTML"],
+        "npmjs": null,
+        "image": "/images/mangoz1x.png",
+        "id": 3
+    },
+    {
+        "title": "PHP-FileUpload",
+        "description": "A MySQL, PHP based file uploading site with file sharing, folder sharing, and many more features.",
+        "github": "https://github.com/Mangoz1x/PHP-FileUpload",
+        "languages": ["PHP", "MySQL", "JavaScript", "CSS", "HTML"],
+        "link": "https://phpupload.mangoz1x.com/Site/Upl/upload",
+        "npmjs": null,
+        "image": "/images/phpupload.png",
+        "id": 6
+    },
+    {
         "title": "GitAutoDeploy",
         "description": "GitAutoDeploy will listen for commits to your repository and if one is detected will automatically clone the repo and run scripts that you define (e.g. npm run build, npm start)",
         "github": "https://github.com/Mangoz1x/GitAutoDeploy",
         "languages": ["JavaScript"],
         "link": null,
         "npmjs": "https://www.npmjs.com/package/@mangoz/git-auto-deploy",
-        "image": null,
+        "image": "https://thumbs.dreamstime.com/b/illustration-cool-multicolored-pattern-perfect-wallpapers-backgrounds-184149665.jpg",
         "id": 1
     },
     {
@@ -18,16 +58,6 @@
         "npmjs": "https://www.npmjs.com/package/localdb-json",
         "image": null,
         "id": 2
-    },
-    {
-        "title": "NodeJS-FileUpload",
-        "description": "A NodeJS, MySQL powered file uploading application that allows for multiple CDNs.",
-        "github": "https://github.com/Mangoz1x/NodeJS-FileUpload",
-        "link": "https://mangoz1x.com",
-        "languages": ["JavaScript", "MySQL", "MongoDB", "CSS", "HTML"],
-        "npmjs": null,
-        "image": null,
-        "id": 3
     },
     {
         "title": "MangoDB",
@@ -48,35 +78,5 @@
         "npmjs": null,
         "image": null,
         "id": 5
-    },
-    {
-        "title": "PHP-FileUpload",
-        "description": "A MySQL, PHP based file uploading site with file sharing, folder sharing, and many more features.",
-        "github": "https://github.com/Mangoz1x/PHP-FileUpload",
-        "languages": ["PHP", "MySQL", "JavaScript", "CSS", "HTML"],
-        "link": null,
-        "npmjs": null,
-        "image": null,
-        "id": 6
-    },
-    {
-        "title": "Portfolio",
-        "description": "My own personal portfolio.",
-        "github": "https://github.com/Mangoz1x/Portfolio",
-        "languages": ["NextJS", "JavaScript", "TailwindCSS"],
-        "link": null,
-        "npmjs": null,
-        "image": null,
-        "id": 7
-    },
-    {
-        "title": "JustPix",
-        "description": "A project for people to upload, edit, and select product specifications to print an image.",
-        "github": null,
-        "languages": ["NextJS", "JavaScript", "MongoDB", "TailwindCSS"],
-        "link": "https://justpix.mangoz1x.com",
-        "npmjs": null,
-        "image": null,
-        "id": 8
     }
 ]

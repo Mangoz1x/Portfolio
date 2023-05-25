@@ -11,18 +11,6 @@ const Main = () => {
   const [windowHash, setWindowHash] = useState(null);
   const heroTitle = TypingEffect(["developer", "designer", "student"]);
 
-  const LanguageLibrary = {
-    PHP: "#4F5D95",
-    JavaScript: "#b8a727",
-    CSS: "#563d7c",
-    HTML: "#e34c26",
-    TailwindCSS: "rgb(14 165 233)",
-    BootStrap: "712cf9",
-    MySQL: "#000",
-    MongoDB: "rgb(17, 97, 73)",
-    NextJS: "#FFF"
-  };
-
   const Navigation = [
     {
       id: "title",
@@ -82,7 +70,7 @@ const Main = () => {
   useEffect(() => {
     // Fetch current hash from the URL
     const hash = window.location.hash;
-  
+
     const scrollHandler = () => {
       for (let i = Navigation.length - 1; i >= 0; i--) {
         const navItem = Navigation[i];
@@ -99,20 +87,18 @@ const Main = () => {
         }
       }
     };
-  
+
     window.addEventListener("scroll", scrollHandler);
-  
+
     // Check if a hash exists in the URL
     if (hash) setWindowHash(hash);
-  
+
     // Cleanup scroll event on unmount
     return () => {
       window.removeEventListener("scroll", scrollHandler);
     };
-  
-  }, [typeof window !== 'undefined' ? window?.location?.hash : null]);
-  
 
+  }, [typeof window !== 'undefined' ? window?.location?.hash : null]);
 
   return (
     <div className="bg-gray-950 h-fit w-full flex">
@@ -214,76 +200,62 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="min-h-screen h-fit w-full flex items-center overflow-hidden" id="projects">
-          <div className="px-4 md:px-10 p-10 flex w-full h-full flex-col">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white text-right w-full mb-8">top projects</h1>
+        <div className="min-h-screen h-fit flex w-full items-center relative overflow-hidden" id="projects">
+          <div className="mt-10 absolute top-0 bottom-0 w-[1px] bg-gray-800"></div>
 
-            <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 h-fit gap-4">
-              {Projects.map(project => (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ ease: "easeOut", duration: 0.5, delay: project.id * 0.15 }}
+          <div className="flex flex-col w-full md:w-full lg:w-4/5 xl:w-2/3 p-5 h-fit min-h-screen">
+            <h1 className="text-4xl md:text-6xl text-white font-bold p-5">Projects</h1>
 
-                  key={`project-${project.id}`}
-                  className="bg-gray-950 border-gray-800 border overflow-hidden rounded-lg w-full h-full relative"
-                >
-                  {project.image && (
-                    <div className="absolute w-full h-full top-0 opacity-25" style={{
-                      backgroundImage: `url("${project.image}")`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center"
-                    }} />
-                  )}
+            <div className="flex flex-col mt-6 w-full gap-8">
+              {Projects.map((project, index) => (
+                <div key={`project-${index}`} className="flex transition-all border border-gray-950 hover:border-gray-800 w-full h-fit p-5 rounded-md hover:bg-gray-900">
+                  <div className="w-fit h-fit mr-4">
+                    <div className="bg-gray-800 border border-gray-800 w-28 h-16 rounded-md md:block hidden" 
+                      style={{
+                        backgroundImage: `url(${project.image})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat"
+                      }} />
+                  </div>
 
-                  <div className="w-full h-full p-5 relative top-0 flex flex-col">
-                    <h2 className="text-white text-3xl" style={{ fontFamily: "Open Sans" }}>{project.title}</h2>
-                    <p className="text-gray-300 mt-4 text-sm">{project.description}</p>
+                  <div>
+                    <h2 className="text-lg font-bold font-inter">{project.title}</h2>
 
-                    <div className="w-full h-fit flex gap-2 mt-auto pt-4">
-                      {project?.languages && project.languages.map(language => (
-                        <div className="rounded-md h-fit w-fit py-1 px-2 text-white" style={{
-                          backgroundColor: LanguageLibrary[language],
-                          fontSize: "8px",
-                          color: language == "NextJS" ? "#000" : "#FFF"
-                        }} key={`language-${language}-project-${project.title}`}>
-                          {language}
+                    <p className="text-gray-400 mt-2 text-md">
+                      {project.description}
+                    </p>
+
+                    <div className={`mt-4 items-center ${!(project?.github || project?.link || project?.npmjs) ? "hidden" : "flex"} gap-3`}>
+                      {project.github && (
+                        <a href={project.github} target="_blank">
+                          <BsGithub className="w-4 h-4 text-gray-400 hover:text-gray-200" />
+                        </a>
+                      )}
+
+                      {project.npmjs && (
+                        <a href={project.npmjs} target="_blank">
+                          <TbBrandNpm className="w-4 h-4 text-gray-400 hover:text-gray-200" />
+                        </a>
+                      )}
+
+                      {project.link && (
+                        <a href={project.link} target="_blank">
+                          <BsLink45Deg className="w-4 h-4 text-gray-400 hover:text-gray-200" />
+                        </a>
+                      )}
+                    </div>
+
+                    <div className="flex flex-wrap w-full h-fit mt-4 gap-2">
+                      {project.languages.map((aspect, index) => (
+                        <div key={`project-${index}-aspect-${index}`} className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                          {aspect}
                         </div>
                       ))}
                     </div>
-
-                    <div className="w-full h-fit flex gap-3 mt-4">
-                      {project.github && (
-                        <a href={project.github} className="w-6 h-6" target="_blank">
-                          <BsGithub className="w-6 h-6 text-gray-300" />
-                        </a>
-                      )}
-                      {project.link && (
-                        <a href={project.link} className="w-6 h-6" target="_blank">
-                          <BsLink45Deg className="w-6 h-6 text-gray-300" />
-                        </a>
-                      )}
-                      {project.npmjs && (
-                        <a href={project.npmjs} className="w-6 h-6" target="_blank">
-                          <TbBrandNpm className="w-6 h-6 text-gray-300" />
-                        </a>
-                      )}
-                    </div>
                   </div>
-                </motion.div>
+                </div>
               ))}
-
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ easy: "easeOut", duration: 0.5, delay: Projects.length * 0.15 }}
-                className="bg-gray-950 overflow-hidden flex justify-center items-center rounded-lg w-full h-full relative"
-              >
-                <a href="https://github.com/Mangoz1x?tab=repositories" target="_blank" className="bg-blue-500 flex gap-4 px-6 py-3 rounded-lg">
-                  View More
-                  <BsGithub className="w-6 h-6 text-white" />
-                </a>
-              </motion.div>
             </div>
           </div>
         </div>
