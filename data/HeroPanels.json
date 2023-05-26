@@ -87,6 +87,27 @@
             "color": "#030712",
             "width": "2/5",
             "id": 10
+        },
+        {
+            "title": "Stripe API",
+            "description": "6 months of experience",
+            "border": "#1c9939",
+            "color": "#030712",
+            "width": "2/5"
+        },
+        {
+            "title": "Fedex API",
+            "description": "2 months of experience",
+            "border": "#d91128",
+            "color": "#030712",
+            "width": "3/5"
+        },
+        {
+            "title": "Magentrix API",
+            "description": "6 months of experience",
+            "border": "#852fba",
+            "color": "#030712",
+            "width": "2/5"
         }
     ]
 ]

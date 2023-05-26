@@ -4,7 +4,7 @@
         "description": "A project for people to upload, edit, and select product specifications to print an image.",
         "github": null,
         "date": "2022-CURRENT",
-        "languages": ["NextJS", "JavaScript", "MongoDB", "TailwindCSS"],
+        "languages": ["NextJS", "JavaScript", "MongoDB", "TailwindCSS", "Stripe API", "Fedex API"],
         "link": "https://justpix.mangoz1x.com",
         "npmjs": null,
         "image": "/images/justpix.PNG",
@@ -37,11 +37,22 @@
         "description": "A MySQL, PHP based file uploading site with file sharing, folder sharing, and many more features.",
         "github": "https://github.com/Mangoz1x/PHP-FileUpload",
         "languages": ["PHP", "MySQL", "JavaScript", "CSS", "HTML"],
-        "link": "https://phpupload.mangoz1x.com/Site/Upl/upload",
+        "link": "https://archive.mangoz1x.com/Site/Upl/",
         "npmjs": null,
         "image": "/images/phpupload.PNG",
         "date": "2020-2021",
         "id": 6
+    },
+    {
+        "title": "Dezar",
+        "description": "My first client project for their company. The site is no longer active however it was a major milestone in my career.",
+        "github": "https://github.com/Mangoz1x/Dezar",
+        "languages": ["HTML", "CSS", "JavaScript", "PHP"],
+        "image": "/images/dezar.png",
+        "id": 9,
+        "npmjs": null,
+        "date": "2021",
+        "link": "https://archive.mangoz1x.com/Site/Dezar/index.html"
     },
     {
         "title": "GitAutoDeploy",
@@ -51,7 +62,7 @@
         "link": null,
         "date": "2023",
         "npmjs": "https://www.npmjs.com/package/@mangoz/git-auto-deploy",
-        "image": "https://thumbs.dreamstime.com/b/illustration-cool-multicolored-pattern-perfect-wallpapers-backgrounds-184149665.jpg",
+        "image": null,
         "id": 1
     },
     {
