@@ -201,7 +201,7 @@ const Main = () => {
             <div className="flex flex-col mt-6 w-full gap-8">
               {Expertise.map((experience, index) => (
                 <div key={`experience-${index}`} className="transition-all border border-gray-950 hover:border-gray-800 w-full h-fit p-5 rounded-md hover:bg-gray-900">
-                  <h2 className="text-lg font-bold font-inter">{experience.title}</h2>
+                  <h2 className="text-lg font-bold font-inter text-gray-200">{experience.title}</h2>
                   <span className="text-lg text-gray-600 text-sm">• {experience.roles.join(" • ")}</span>
 
                   <p className="text-gray-400 mt-2 text-md">
@@ -241,7 +241,7 @@ const Main = () => {
                   </div>
 
                   <div>
-                    <h2 className="text-lg font-bold font-inter">
+                    <h2 className="text-lg font-bold font-inter text-gray-200">
                       {project.title}
                       <span className="text-lg text-gray-600 text-sm"> • {project?.date}</span>
                     </h2>
@@ -290,7 +290,7 @@ const Main = () => {
               {Projects.filter(({ image }) => !image).map((project, index) => (
                 <div key={`mini-project-${index}`} className="flex transition-all border border-gray-950 hover:border-gray-800 w-full h-fit p-5 rounded-md hover:bg-gray-900">
                   <div>
-                    <h2 className="text-lg font-bold font-inter">
+                    <h2 className="text-lg font-bold font-inter text-gray-200">
                       {project.title}
                       <span className="text-lg text-gray-600 text-sm"> • {project?.date}</span>
                     </h2>
