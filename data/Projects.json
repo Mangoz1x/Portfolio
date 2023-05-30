@@ -8,7 +8,7 @@
         "link": "https://justpix.mangoz1x.com",
         "npmjs": null,
         "image": "/images/justpix.PNG",
-        "id": 8
+        "id": 1
     },
     {
         "title": "Portfolio",
@@ -19,12 +19,12 @@
         "link": null,
         "npmjs": null,
         "image": "/images/portfolio.PNG",
-        "id": 7
+        "id": 2
     },
     {
-        "title": "NodeJS-FileUpload",
+        "title": "NodeFileUpload",
         "description": "A NodeJS, MySQL powered file uploading application that allows for multiple CDNs.",
-        "github": "https://github.com/Mangoz1x/NodeJS-FileUpload",
+        "github": "https://github.com/Mangoz1x/NodeFileUpload",
         "link": "https://mangoz1x.com",
         "date": "2021-2022",
         "languages": ["JavaScript", "MySQL", "MongoDB", "CSS", "HTML"],
@@ -33,15 +33,15 @@
         "id": 3
     },
     {
-        "title": "PHP-FileUpload",
+        "title": "PhpFileUpload",
         "description": "A MySQL, PHP based file uploading site with file sharing, folder sharing, and many more features.",
-        "github": "https://github.com/Mangoz1x/PHP-FileUpload",
+        "github": "https://github.com/Mangoz1x/PhpFileUpload",
         "languages": ["PHP", "MySQL", "JavaScript", "CSS", "HTML"],
         "link": "https://archive.mangoz1x.com/Site/Upl/",
         "npmjs": null,
         "image": "/images/phpupload.PNG",
         "date": "2020-2021",
-        "id": 6
+        "id": 4
     },
     {
         "title": "Dezar",
@@ -49,7 +49,7 @@
         "github": "https://github.com/Mangoz1x/Dezar",
         "languages": ["HTML", "CSS", "JavaScript", "PHP"],
         "image": "/images/dezar.png",
-        "id": 9,
+        "id": 5,
         "npmjs": null,
         "date": "2021",
         "link": "https://archive.mangoz1x.com/Site/Dezar/index.html"
@@ -63,7 +63,7 @@
         "date": "2023",
         "npmjs": "https://www.npmjs.com/package/@mangoz/git-auto-deploy",
         "image": null,
-        "id": 1
+        "id": 6
     },
     {
         "title": "LocalDB",
@@ -74,7 +74,7 @@
         "date": "2022",
         "npmjs": "https://www.npmjs.com/package/localdb-json",
         "image": null,
-        "id": 2
+        "id": 7
     },
     {
         "title": "MangoDB",
@@ -85,17 +85,17 @@
         "link": null,
         "npmjs": null,
         "image": null,
-        "id": 4
+        "id": 8
     },
     {
-        "title": "JSON2SQL",
+        "title": "JsonToSql",
         "description": "A MySQL ODM, async, easily manageable, useful when you want to make changes to the functionality of your database queries without rewriting lots of code. Makes MySQL queries JSON based for simplicity.",
-        "github": "https://github.com/Mangoz1x/JSON2SQL",
+        "github": "https://github.com/Mangoz1x/JsonToSql",
         "languages": ["JavaScript", "MySQL"],
         "date": "2022",
         "link": null,
         "npmjs": null,
         "image": null,
-        "id": 5
+        "id": 9
     }
 ]
