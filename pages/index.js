@@ -59,7 +59,12 @@ const Main = () => {
       description: "I have learnt how to use software like FL Studio, GarageBand, SeratoDJ, along with hardware like the MCX8000, NewMark DJ Controllers and many more.",
       aspects: ["Music", "FL Studio", "GarageBand", "SeratoDJ", "DJ Controller"]
     }
-  ]
+  ];
+
+  const RedirectToNewTab = (url) => {
+    if (!url) return;
+    window.open(url);
+  }
 
   useEffect(() => {
     // Fetch current hash from the URL
@@ -150,43 +155,43 @@ const Main = () => {
         </div>
 
         <div className="min-h-screen h-fit flex w-full items-center relative overflow-hidden" id="about">
-        <div className="mt-10 absolute top-0 bottom-0 w-[1px] bg-gray-800"></div>
+          <div className="mt-10 absolute top-0 bottom-0 w-[1px] bg-gray-800"></div>
 
           <div className="flex flex-col w-full md:w-full lg:w-4/5 xl:w-2/3 p-10 h-fit min-h-screen">
             <h1 className="text-4xl md:text-6xl text-white font-bold">About</h1>
 
             <p className="text-gray-400 text-md mt-4">
               I'm <span className="text-white">Ryan</span>
-              , a 15-year-old tech enthusiast who found a passion for tech at 10. 
-              My initial interests in electricity and motors led me to coding. 
-              Before that, I explored music production with GarageBand and FL Studio, 
+              , a 15-year-old tech enthusiast who found a passion for tech at 10.
+              My initial interests in electricity and motors led me to coding.
+              Before that, I explored music production with GarageBand and FL Studio,
               which I shared on my first YouTube channel,&nbsp;
               <a href="https://www.youtube.com/@mangomusic8313" target="_blank" className="text-blue-500">Mango Music</a>.
-              <br/><br/>
+              <br /><br />
               My interest in tech led me to <span className="text-white">JavaScript</span>&nbsp;
               and my first website, intended for mixing beats. This project introduced me to&nbsp;
               <span className="text-white">servers, databases, networking, and platforms like Hostinger and cPanel hosts</span>.
               I expanded my knowledge to&nbsp;
               <span className="text-white">
-                PHP for server-side scripting, 
+                PHP for server-side scripting,
               </span>&nbsp;
               leading to my first file uploading site,&nbsp;
               <a href="https://achive.mangoz1x.com/Site/Upl" className="text-blue-500" target="_blank">PHP Upload</a>&nbsp;
               This experience sparked my love for coding.
-              <br/><br/>
+              <br /><br />
               I later rebuilt the site using&nbsp;
               <span className="text-white">JavaScript and Node.js</span>, resulting in&nbsp;
-              <a href="https://mangoz1x.com" className="text-blue-500" target="_blank">Mangoz1x</a>. During this time, 
+              <a href="https://mangoz1x.com" className="text-blue-500" target="_blank">Mangoz1x</a>. During this time,
               I developed my own&nbsp;<span className="text-white">ODM and ORM for MySQL and MongoDB</span>. All my projects are shared on my&nbsp;
               <a href="https://github.com/Mangoz1x/" className="text-blue-500" target="_blank">GitHub</a>.
-              <br/><br/>
+              <br /><br />
               My first professional project was a website for&nbsp;
-              <a href="https://archive.mangoz1x.com/Site/Dezar/" className="text-blue-500" target="_blank">DezarInc</a>. Later, I built a full-stack eCommerce platform, 
-              &nbsp;<a href="https://justpix.mangoz1x.com" target="_blank" className="text-blue-500">JustPix</a>, with features like discounts, gift cards, and multiple account types. I've also worked on side projects like 
+              <a href="https://archive.mangoz1x.com/Site/Dezar/" className="text-blue-500" target="_blank">DezarInc</a>. Later, I built a full-stack eCommerce platform,
+              &nbsp;<a href="https://justpix.mangoz1x.com" target="_blank" className="text-blue-500">JustPix</a>, with features like discounts, gift cards, and multiple account types. I've also worked on side projects like
               &nbsp;<a href="https://github.com/Mangoz1x/GitAutoDeploy" target="_blank" className="text-blue-500">GitAutoDeploy</a>&nbsp;and trained object detection models for AI projects.
-              <br/><br/>
+              <br /><br />
               Outside tech, I'm on a weight loss journey through weight lifting. I've also returned to music with my successful YouTube channel, 19M.
-              <br/><br/>
+              <br /><br />
               While building PHP Upload and&nbsp;<a href="https://justpix.mangoz1x.com" target="_blank" className="text-blue-500">JustPix</a>, I learned to use Microsoft Azure, Apache, Gravit Design, and Figma. I hope I have sparked your interest!
             </p>
           </div>
@@ -229,7 +234,7 @@ const Main = () => {
 
             <div className="flex flex-col mt-6 w-full gap-8">
               {Projects.filter(({ image }) => image).map((project, index) => (
-                <div key={`project-${index}`} className="flex transition-all border border-gray-950 hover:border-gray-800 w-full h-fit p-5 rounded-md hover:bg-gray-900">
+                <div onClick={() => RedirectToNewTab(project?.link || project?.github || project?.npmjs)} key={`project-${index}`} className="flex transition-all border border-gray-950 hover:border-gray-800 w-full h-fit p-5 rounded-md hover:bg-gray-900">
                   <div className="w-fit h-fit mr-4">
                     <div className="bg-gray-800 border border-gray-800 w-28 h-16 rounded-md md:block hidden"
                       style={{
@@ -237,7 +242,7 @@ const Main = () => {
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         backgroundRepeat: "no-repeat"
-                      }} />
+                      }}></div>
                   </div>
 
                   <div>
@@ -288,7 +293,7 @@ const Main = () => {
 
             <div className="flex flex-col w-full h-fit py-5">
               {Projects.filter(({ image }) => !image).map((project, index) => (
-                <div key={`mini-project-${index}`} className="flex transition-all border border-gray-950 hover:border-gray-800 w-full h-fit p-5 rounded-md hover:bg-gray-900">
+                <div onClick={() => RedirectToNewTab(project?.link || project?.github || project?.npmjs)} key={`mini-project-${index}`} className="flex transition-all border border-gray-950 hover:border-gray-800 w-full h-fit p-5 rounded-md hover:bg-gray-900">
                   <div>
                     <h2 className="text-lg font-bold font-inter text-gray-200">
                       {project.title}
