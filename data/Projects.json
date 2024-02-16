@@ -1,14 +1,25 @@
 [
     {
-        "title": "JustPix",
+        "title": "Justpix",
         "description": "A project for people to upload, edit, and select product specifications to print an image.",
         "github": null,
         "date": "2022-CURRENT",
         "languages": ["NextJS", "JavaScript", "MongoDB", "TailwindCSS", "Stripe API", "Fedex API"],
-        "link": "https://justpix.mangoz1x.com",
+        "link": "https://justpix.com",
         "npmjs": null,
         "image": "/images/justpix.PNG",
         "id": 1
+    },
+    {
+        "title": "MyStylist",
+        "description": "An AI based clothing app. Users scroll through a series of vertically aligned outfits and the algorithm learns your preferences over time. Users can follow others and see what outfits they wore.",
+        "github": null,
+        "npmjs": null,
+        "link": "https://stylegpt.net",
+        "date": "2024-CURRENT",
+        "image": "/images/stylegpt.png",
+        "languages": ["NextJS", "JavaScript", "MongoDB", "TailwindCSS"],
+        "id": 2
     },
     {
         "title": "Portfolio",
@@ -19,7 +30,7 @@
         "link": null,
         "npmjs": null,
         "image": "/images/portfolio.PNG",
-        "id": 2
+        "id": 3
     },
     {
         "title": "NodeFileUpload",
@@ -30,18 +41,17 @@
         "languages": ["JavaScript", "MySQL", "MongoDB", "CSS", "HTML"],
         "npmjs": null,
         "image": "/images/mangoz1x.PNG",
-        "id": 3
+        "id": 4
     },
     {
         "title": "PhpFileUpload",
         "description": "A MySQL, PHP based file uploading site with file sharing, folder sharing, and many more features.",
         "github": "https://github.com/Mangoz1x/PhpFileUpload",
         "languages": ["PHP", "MySQL", "JavaScript", "CSS", "HTML"],
-        "link": "https://archive.mangoz1x.com/Site/Upl/",
         "npmjs": null,
         "image": "/images/phpupload.PNG",
         "date": "2020-2021",
-        "id": 4
+        "id": 5
     },
     {
         "title": "Dezar",
@@ -49,10 +59,10 @@
         "github": "https://github.com/Mangoz1x/Dezar",
         "languages": ["HTML", "CSS", "JavaScript", "PHP"],
         "image": "/images/dezar.png",
-        "id": 5,
+        "id": 6,
         "npmjs": null,
         "date": "2021",
-        "link": "https://archive.mangoz1x.com/Site/Dezar/index.html"
+        "link": null
     },
     {
         "title": "GitAutoDeploy",
@@ -63,7 +73,7 @@
         "date": "2023",
         "npmjs": "https://www.npmjs.com/package/@mangoz/git-auto-deploy",
         "image": null,
-        "id": 6
+        "id": 7
     },
     {
         "title": "LocalDB",
@@ -74,7 +84,7 @@
         "date": "2022",
         "npmjs": "https://www.npmjs.com/package/localdb-json",
         "image": null,
-        "id": 7
+        "id": 8
     },
     {
         "title": "MangoDB",
@@ -85,7 +95,7 @@
         "link": null,
         "npmjs": null,
         "image": null,
-        "id": 8
+        "id": 9
     },
     {
         "title": "JsonToSql",
@@ -96,6 +106,6 @@
         "link": null,
         "npmjs": null,
         "image": null,
-        "id": 9
+        "id": 10
     }
 ]
