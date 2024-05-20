@@ -3,7 +3,7 @@ import HeroPanels from "../data/HeroPanels.json";
 import Projects from "../data/Projects.json";
 import { motion } from "framer-motion"
 import { TypingEffect } from "@component/helpers/typing";
-import { BsGithub, BsLink45Deg } from "react-icons/bs";
+import { BsGithub, BsLink45Deg, BsLinkedin } from "react-icons/bs";
 import { TbBrandNpm } from "react-icons/tb";
 import { useEffect, useState } from "react";
 
@@ -15,7 +15,7 @@ const Main = () => {
     {
       id: "title",
       href: "#title",
-      content: "TITLE"
+      content: "INTRODUCTION"
     },
     {
       id: "about",
@@ -31,21 +31,32 @@ const Main = () => {
       id: "projects",
       href: "#projects",
       content: "PROJECTS"
+    },
+    {
+      id: "connect",
+      href: "#connect",
+      content: "CONNECT"
     }
   ];
 
   const Expertise = [
     {
+      title: "Artificial Intelligence",
+      roles: ["Hobby", "2023-CURRENT"],
+      description: "Learning how to finetune ML algorithms, and AI models like YOLOV5, GPT2, lamma3 8b, and more.",
+      aspects: ["Machine Learning", "Deep Learning", "Computer Vision", "Python", "PyTorch"]
+    },
+    {
+      title: "Software Development",
+      roles: ["Hobby", "2020-CURRENT"],
+      description: "Learning about different technologies, programming languages, and frameworks (NextJS, Python, JavaScript, React Native & Expo Go). Integrating with several platforms and API's like Stripe, MongoDB, Pinecone Vector Search, Google Vertex AI, OpenAI, FedEx and more.",
+      aspects: ["Machine Learning", "Deep Learning", "Computer Vision", "Python", "PyTorch"]
+    },
+    {
       title: "AutoCAD & AutoDesk",
       roles: ["Academic - TIJ201", "2023"],
       description: "Grade 9 Exploring Technologies course, during this course I have developed experience with CAD software like AutoCAD, TinkerCAD, and LightBurn. I learnt CNC programming and created multiple things such as laser-etched clock faces, CNC wood designes, and bottle rockets.",
       aspects: ["Technologies", "CNC", "CAD Software"]
-    },
-    {
-      title: "Arduino & Computer Hardware",
-      roles: ["Hobby", "2022-CURRENT"],
-      description: "I have experience building with Arduino controllers, Raspberry Pi's and desktop hardware. I have built multiple desktops, and learnt in depth what every part of the computer does and how it functions.",
-      aspects: ["Technologies", "Computer Hardware", "Code", "Arduino", "Raspberry Pi"]
     },
     {
       title: "3D Printing",
@@ -54,11 +65,17 @@ const Main = () => {
       aspects: ["3D Design", "3D Printing", "TinkerCAD", "Cura"]
     },
     {
-      title: "Music Production",
-      roles: ["Hobby", "2020-CURRENT"],
-      description: "I have learnt how to use software like FL Studio, GarageBand, SeratoDJ, along with hardware like the MCX8000, NewMark DJ Controllers and many more.",
-      aspects: ["Music", "FL Studio", "GarageBand", "SeratoDJ", "DJ Controller"]
-    }
+      title: "Arduino & Computer Hardware",
+      roles: ["Hobby", "2022-CURRENT"],
+      description: "I have experience building with Arduino controllers, Raspberry Pi's and desktop hardware. I have built multiple desktops, and learnt in depth what every part of the computer does and how it functions.",
+      aspects: ["Technologies", "Computer Hardware", "Code", "Arduino", "Raspberry Pi"]
+    },
+    // {
+    //   title: "Music Production",
+    //   roles: ["Hobby", "2020-CURRENT"],
+    //   description: "I have learnt how to use software like FL Studio, GarageBand, SeratoDJ, along with hardware like the MCX8000, NewMark DJ Controllers and many more.",
+    //   aspects: ["Music", "FL Studio", "GarageBand", "SeratoDJ", "DJ Controller"]
+    // }
   ];
 
   const RedirectToNewTab = (url) => {
@@ -126,6 +143,7 @@ const Main = () => {
               <h2 className="text-blue-500 font-bold text-xl">Hi i'm Ryan,</h2>
               <h1 className="text-4xl sm:text-6xl font-bold text-white">
                 I am a <span>{heroTitle}</span>
+                {/* <span className="h-12 ml-1 animate-pulse w-1 bg-white inline-block"></span> */}
               </h1>
               <p className="text-gray-400 mt-4">
                 I'm a full-stack developer with a passion for innovation, sports,
@@ -161,38 +179,34 @@ const Main = () => {
             <h1 className="text-4xl md:text-6xl text-white font-bold">About</h1>
 
             <p className="text-gray-400 text-md mt-4">
-              I'm <span className="text-white">Ryan</span>
-              , a 15-year-old tech enthusiast who found a passion for tech at 10.
-              My initial interests in electricity and motors led me to coding.
-              Before that, I explored music production with GarageBand and FL Studio,
-              which I shared on my first YouTube channel,&nbsp;
-              <a href="https://www.youtube.com/@mangomusic8313" target="_blank" className="text-blue-500">Mango Music</a>.
+              I'm <span className="text-white">Ryan</span>, a tech enthusiast who found a passion for tech at a young age.
+              My initial interests in electricity and motors led me to coding. Before that, I explored music production with GarageBand and FL Studio,
+              which I shared on my first YouTube channel.
               <br /><br />
-              My interest in tech led me to <span className="text-white">JavaScript</span>&nbsp;
-              and my first website, intended for mixing beats. This project introduced me to&nbsp;
-              <span className="text-white">servers, databases, networking, and platforms like Hostinger and cPanel hosts</span>.
-              I expanded my knowledge to&nbsp;
-              <span className="text-white">
-                PHP for server-side scripting,
-              </span>&nbsp;
-              leading to my first file uploading site,&nbsp;
-              <a href="https://achive.mangoz1x.com/Site/Upl" className="text-blue-500" target="_blank">PHP Upload</a>&nbsp;
-              This experience sparked my love for coding.
+              My interest in tech led me to <span className="text-white">JavaScript</span> and my first website, intended for mixing beats.
+              This project introduced me to <span className="text-white">servers, databases, networking, and platforms like Hostinger and cPanel hosts</span>.
+              I expanded my knowledge to <span className="text-white">PHP for server-side scripting</span>, leading to my first file uploading site,
+              <a href="https://github.com/Mangoz1x/PhpFileUpload" className="text-blue-500" target="_blank">&nbsp;PHP Upload</a>. This experience sparked my love for coding.
               <br /><br />
-              I later rebuilt the site using&nbsp;
-              <span className="text-white">JavaScript and Node.js</span>, resulting in&nbsp;
-              <a href="https://mangoz1x.com" className="text-blue-500" target="_blank">Mangoz1x</a>. During this time,
-              I developed my own&nbsp;<span className="text-white">ODM and ORM for MySQL and MongoDB</span>. All my projects are shared on my&nbsp;
-              <a href="https://github.com/Mangoz1x/" className="text-blue-500" target="_blank">GitHub</a>.
+              I later rebuilt the site using <span className="text-white">JavaScript and Node.js</span>, resulting in
+              <a href="https://mangoz1x.com" className="text-blue-500" target="_blank">&nbsp;Mangoz1x</a>. During this time,
+              I developed my own <span className="text-white">ODM and ORM for MySQL and MongoDB</span>. All my projects are shared on my
+              <a href="https://github.com/Mangoz1x/" className="text-blue-500" target="_blank">&nbsp;GitHub</a>.
               <br /><br />
-              My first professional project was a website for&nbsp;
-              <a href="https://archive.mangoz1x.com/Site/Dezar/" className="text-blue-500" target="_blank">DezarInc</a>. Later, I built a full-stack eCommerce platform,
-              &nbsp;<a href="https://justpix.mangoz1x.com" target="_blank" className="text-blue-500">JustPix</a>, with features like discounts, gift cards, and multiple account types. I've also worked on side projects like
-              &nbsp;<a href="https://github.com/Mangoz1x/GitAutoDeploy" target="_blank" className="text-blue-500">GitAutoDeploy</a>&nbsp;and trained object detection models for AI projects.
+              My first professional project was a full-stack eCommerce platform,
+              <a href="https://justpix.mangoz1x.com" target="_blank" className="text-blue-500">&nbsp;JustPix</a>, with features like discounts, gift cards, and multiple account types.
+              I've also worked on side projects like
+              <a href="https://github.com/Mangoz1x/GitAutoDeploy" target="_blank" className="text-blue-500">&nbsp;GitAutoDeploy</a> and fine-tuned object detection models (YOLOV5) for AI projects.
+              I was hired as a freelancer at
+              <a href="https://magentrix.com" target="_blank" className="text-blue-500">&nbsp;Magentrix</a> for a few months to build their mobile app, alongside building their new homepages and pricing pages.
+              After this, I began work on an AI-based clothing app,
+              <a href="https://stylegpt.net" target="_blank" className="text-blue-500">&nbsp;MyStylist</a>, where I continue to work.
               <br /><br />
-              Outside tech, I'm on a weight loss journey through weight lifting. I've also returned to music with my successful YouTube channel, 19M.
+              Outside tech, I'm on a weight loss journey through weight lifting and nutrition.
+              I've also returned to music with my successful YouTube channel, 19M.
               <br /><br />
-              While building PHP Upload and&nbsp;<a href="https://justpix.mangoz1x.com" target="_blank" className="text-blue-500">JustPix</a>, I learned to use Microsoft Azure, Apache, Gravit Design, and Figma. I hope I have sparked your interest!
+              While building PHP Upload, <a href="https://justpix.mangoz1x.com" target="_blank" className="text-blue-500">JustPix</a>, and
+              <a href="https://stylegpt.net" target="_blank" className="text-blue-500">&nbsp;MyStylist</a>, I learned to use Microsoft Azure, Apache, Gravit Design, Figma, MongoDB, Pinecone Vector Search, OpenAI APIs, FedEx, Stripe, and many more technologies. I hope I have sparked your interest!
             </p>
           </div>
         </div>
@@ -201,7 +215,7 @@ const Main = () => {
           <div className="mt-10 absolute top-0 bottom-0 w-[1px] bg-gray-800"></div>
 
           <div className="flex flex-col w-full md:w-full lg:w-4/5 xl:w-2/3 p-5 h-fit min-h-screen">
-            <h1 className="text-4xl md:text-6xl text-white font-bold p-5">Expertise</h1>
+            <h1 className="text-4xl md:text-6xl text-white font-bold p-5">Expertise & Skills</h1>
 
             <div className="flex flex-col mt-6 w-full gap-8">
               {Expertise.map((experience, index) => (
@@ -336,10 +350,26 @@ const Main = () => {
               ))}
             </div>
 
-            <a href="https://github.com/Mangoz1x/" target="_blank" className="btn bg-blue-500 border-none hover:bg-blue-600 flex items-center justify-center text-center gap-4 py-3 px-8 w-fit h-fit rounded-md transition-all">
-              <BsGithub className="w-4 h-4" />
-              GITHUB
-            </a>
+          </div>
+        </div>
+
+        <div className="min-h-screen h-fit flex w-full items-center relative overflow-hidden" id="connect">
+          <div className="mt-10 absolute top-0 bottom-0 w-[1px] bg-gray-800"></div>
+
+          <div className="flex flex-col w-full md:w-full lg:w-4/5 xl:w-2/3 p-5 h-fit min-h-screen">
+            <h1 className="text-4xl md:text-6xl text-white font-bold p-5">Connect</h1>
+            
+            <div className="flex grid grid-cols-1 gap-x-2 sm:grid-cols-2">
+              <a href="https://github.com/Mangoz1x/" target="_blank" className="btn text-teal-300 bg-teal-400/10 border-none hover:bg-teal-500/10 flex items-center justify-center text-center gap-4 py-3 px-8 w-full h-fit rounded-md transition-all">
+                <BsGithub className="w-4 h-4" />
+                GitHub
+              </a>
+
+              <a href="https://www.linkedin.com/in/ryan-mokhtari-fotovat-17142b2b5/" target="_blank" className="btn text-teal-300 bg-teal-400/10 border-none hover:bg-teal-500/10 flex items-center justify-center text-center gap-4 py-3 px-8 w-full h-fit rounded-md transition-all">
+                <BsLinkedin className="w-4 h-4" />
+                LinkedIn
+              </a>
+            </div>
           </div>
         </div>
       </div>

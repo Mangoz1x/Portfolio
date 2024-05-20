@@ -22,6 +22,17 @@
         "id": 2
     },
     {
+        "title": "Magentrix - Web Development",
+        "description": "Partner Relationship Management, Customer Success Management, Partner Portal Pricing, and Customer Portal Pricing pages.",
+        "github": null,
+        "npmjs": null,
+        "link": "https://magentrix.com",
+        "date": "2024-CURRENT",
+        "image": "/images/magentrix.png",
+        "languages": ["JavaScript", "HTML", "TailwindCSS"],
+        "id": "2a"
+    },
+    {
         "title": "Portfolio",
         "description": "My own personal portfolio.",
         "github": "https://github.com/Mangoz1x/Portfolio",
