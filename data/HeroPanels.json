@@ -1,71 +1,47 @@
 [
     [
         {
-            "title": "NodeJS",
+            "title": "NodeJS & JavaScript",
             "description": "3+ years of experience",
-            "border": "#853c3c",
+            "border": "#f94144",
             "color": "#030712",
             "width": "3/5",
             "id": 1
         },
         {
-            "title": "JavaScript",
-            "description": "4+ years of experience",
-            "border": "#916e3d",
+            "title": "NextJS",
+            "description": "2 years of experience",
+            "border": "#f9c74f",
             "color": "#030712",
-            "width": "2/5",
-            "id": 2
+            "width": "3/5",
+            "id": 9
         }
     ],
     [
         {
             "title": "MongoDB",
-            "description": "1+ year of experience",
-            "border": "#606632",
+            "description": "2 years of experience",
+            "border": "#f3722c",
             "color": "#030712",
             "width": "2/5",
             "id": 3
-        },
-        {
-            "title": "MySQL",
-            "description": "2+ years of experience",
-            "border": "#3c6632",
-            "color": "#030712",
-            "width": "3/5",
-            "id": 4
         }
     ],
     [
         {
             "title": "TailwindCSS",
-            "description": "6 months of experience",
-            "border": "#32665d",
+            "description": "2 years of experience",
+            "border": "#f8961e",
             "color": "#030712",
             "width": "3/5",
             "id": 5
-        },
-        {
-            "title": "Bootstrap",
-            "description": "4 months of experience",
-            "border": "#324366",
-            "color": "#030712",
-            "width": "2/5",
-            "id": 6
         }
     ],
     [
         {
-            "title": "PHP",
-            "description": "1+ year of experience",
-            "border": "#4b3266",
-            "color": "#030712",
-            "width": "2/5",
-            "id": 7
-        },
-        {
             "title": "React Native",
-            "description": "1+ year of experience",
-            "border": "#663261",
+            "description": "~1 year of experience",
+            "border": "#f9844a",
             "color": "#030712",
             "width": "3/5",
             "id": 8
@@ -73,25 +49,9 @@
     ],
     [
         {
-            "title": "NextJS",
-            "description": "1+ year of experience",
-            "border": "#66323f",
-            "color": "#030712",
-            "width": "3/5",
-            "id": 9
-        },
-        {
-            "title": "Python",
-            "description": "6 months of experience",
-            "border": "#804674",
-            "color": "#030712",
-            "width": "2/5",
-            "id": 10
-        },
-        {
             "title": "Stripe API",
-            "description": "6 months of experience",
-            "border": "#1c9939",
+            "description": "2 years of experience",
+            "border": "#90be6d",
             "color": "#030712",
             "width": "2/5",
             "id": 11
@@ -99,18 +59,10 @@
         {
             "title": "Fedex API",
             "description": "2 months of experience",
-            "border": "#d91128",
+            "border": "#43aa8b",
             "color": "#030712",
             "width": "3/5",
             "id": 12
-        },
-        {
-            "title": "Magentrix API",
-            "description": "6 months of experience",
-            "border": "#852fba",
-            "color": "#030712",
-            "width": "2/5",
-            "id": 13
         }
     ]
 ]

@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 
 const Main = () => {
   const [windowHash, setWindowHash] = useState(null);
-  const heroTitle = TypingEffect(["developer", "designer", "student"]);
+  const heroTitle = TypingEffect(["developer", "tech enthusiast", "student"]);
 
   const Navigation = [
     {
@@ -40,35 +40,35 @@ const Main = () => {
   ];
 
   const Expertise = [
-    {
-      title: "Artificial Intelligence",
-      roles: ["Hobby", "2023-CURRENT"],
-      description: "Learning how to finetune ML algorithms, and AI models like YOLOV5, GPT2, lamma3 8b, and more.",
-      aspects: ["Machine Learning", "Deep Learning", "Computer Vision", "Python", "PyTorch"]
-    },
+    // {
+    //   title: "Artificial Intelligence",
+    //   roles: ["Hobby", "2023-CURRENT"],
+    //   description: "Learning how to finetune ML algorithms, and AI models like YOLOV5, GPT2, lamma3 8b, and more.",
+    //   aspects: ["Machine Learning", "Deep Learning", "Computer Vision", "Python", "PyTorch"]
+    // },
     {
       title: "Software Development",
       roles: ["Hobby", "2020-CURRENT"],
-      description: "Learning about different technologies, programming languages, and frameworks (NextJS, Python, JavaScript, React Native & Expo Go). Integrating with several platforms and API's like Stripe, MongoDB, Pinecone Vector Search, Google Vertex AI, OpenAI, FedEx and more.",
-      aspects: ["Machine Learning", "Deep Learning", "Computer Vision", "Python", "PyTorch"]
+      description: "I am currently expanding my knowledge of various technologies, programming languages, and frameworks. I have experience with Next.js, JavaScript, and React Native, and I am proficient in integrating with several platforms and APIs, including Stripe, MongoDB, Pinecone Vector Search, Google Vertex AI, OpenAI, FedEx, and more.",
+      aspects: ["Servers", "Networking", "Databases", "Payments"]
     },
+    // {
+    //   title: "AutoCAD & AutoDesk",
+    //   roles: ["Academic - TIJ201", "2023"],
+    //   description: "Grade 9 Exploring Technologies course, during this course I have developed experience with CAD software like AutoCAD, TinkerCAD, and LightBurn. I learnt CNC programming and created multiple things such as laser-etched clock faces, CNC wood designes, and bottle rockets.",
+    //   aspects: ["Technologies", "CNC", "CAD Software"]
+    // },
+    // {
+    //   title: "3D Printing",
+    //   roles: ["Hobby", "2023"],
+    //   description: "I have expertise with 3D printing and 3d printing software such as TinkerCAD, and Cura.",
+    //   aspects: ["3D Design", "3D Printing", "TinkerCAD", "Cura"]
+    // },
     {
-      title: "AutoCAD & AutoDesk",
-      roles: ["Academic - TIJ201", "2023"],
-      description: "Grade 9 Exploring Technologies course, during this course I have developed experience with CAD software like AutoCAD, TinkerCAD, and LightBurn. I learnt CNC programming and created multiple things such as laser-etched clock faces, CNC wood designes, and bottle rockets.",
-      aspects: ["Technologies", "CNC", "CAD Software"]
-    },
-    {
-      title: "3D Printing",
-      roles: ["Hobby", "2023"],
-      description: "I have expertise with 3D printing and 3d printing software such as TinkerCAD, and Cura.",
-      aspects: ["3D Design", "3D Printing", "TinkerCAD", "Cura"]
-    },
-    {
-      title: "Arduino & Computer Hardware",
+      title: "Computer Hardware",
       roles: ["Hobby", "2022-CURRENT"],
-      description: "I have experience building with Arduino controllers, Raspberry Pi's and desktop hardware. I have built multiple desktops, and learnt in depth what every part of the computer does and how it functions.",
-      aspects: ["Technologies", "Computer Hardware", "Code", "Arduino", "Raspberry Pi"]
+      description: "I have experience building with Arduino controllers, Raspberry Pi's and desktop hardware. I have built multiple desktops, and have gained an understanding of the relation between the parts of a computer.",
+      aspects: ["Servers", "Computer Hardware", "Arduino", "Raspberry Pi"]
     },
     // {
     //   title: "Music Production",
@@ -140,14 +140,15 @@ const Main = () => {
             <div className="h-full w-fit border-r border-gray-800 mt-20 hidden md:block"></div>
 
             <div className="w-full md:w-full lg:w-4/5 xl:w-2/3 h-full p-10 flex justify-center flex-col bg-gray-950">
-              <h2 className="text-blue-500 font-bold text-xl">Hi i'm Ryan,</h2>
+              <h2 className="text-blue-500 font-bold text-xl">Hi I'm Ryan,</h2>
               <h1 className="text-4xl sm:text-6xl font-bold text-white">
                 I am a <span>{heroTitle}</span>
                 {/* <span className="h-12 ml-1 animate-pulse w-1 bg-white inline-block"></span> */}
               </h1>
-              <p className="text-gray-400 mt-4">
-                I'm a full-stack developer with a passion for innovation, sports,
-                and music. I have lots of expertise with various technologies & programming langauges.
+              <p className="text-gray-400 mt-1">
+                Nothing beats passion and patience.
+                {/* I'm a full-stack developer with a passion for innovation, sports,
+                and music. I have lots of expertise with various technologies & programming langauges. */}
               </p>
 
               {/* Skills */}
@@ -176,37 +177,18 @@ const Main = () => {
           <div className="mt-10 absolute top-0 bottom-0 w-[1px] bg-gray-800"></div>
 
           <div className="flex flex-col w-full md:w-full lg:w-4/5 xl:w-2/3 p-10 h-fit min-h-screen">
-            <h1 className="text-4xl md:text-6xl text-white font-bold">About</h1>
+            <h1 className="text-4xl md:text-6xl text-white font-bold">About me</h1>
 
             <p className="text-gray-400 text-md mt-4">
-              I'm <span className="text-white">Ryan</span>, a tech enthusiast who found a passion for tech at a young age.
-              My initial interests in electricity and motors led me to coding. Before that, I explored music production with GarageBand and FL Studio,
-              which I shared on my first YouTube channel.
-              <br /><br />
-              My interest in tech led me to <span className="text-white">JavaScript</span> and my first website, intended for mixing beats.
-              This project introduced me to <span className="text-white">servers, databases, networking, and platforms like Hostinger and cPanel hosts</span>.
-              I expanded my knowledge to <span className="text-white">PHP for server-side scripting</span>, leading to my first file uploading site,
-              <a href="https://github.com/Mangoz1x/PhpFileUpload" className="text-blue-500" target="_blank">&nbsp;PHP Upload</a>. This experience sparked my love for coding.
-              <br /><br />
-              I later rebuilt the site using <span className="text-white">JavaScript and Node.js</span>, resulting in
-              <a href="https://mangoz1x.com" className="text-blue-500" target="_blank">&nbsp;Mangoz1x</a>. During this time,
-              I developed my own <span className="text-white">ODM and ORM for MySQL and MongoDB</span>. All my projects are shared on my
-              <a href="https://github.com/Mangoz1x/" className="text-blue-500" target="_blank">&nbsp;GitHub</a>.
-              <br /><br />
-              My first professional project was a full-stack eCommerce platform,
-              <a href="https://justpix.mangoz1x.com" target="_blank" className="text-blue-500">&nbsp;JustPix</a>, with features like discounts, gift cards, and multiple account types.
-              I've also worked on side projects like
-              <a href="https://github.com/Mangoz1x/GitAutoDeploy" target="_blank" className="text-blue-500">&nbsp;GitAutoDeploy</a> and fine-tuned object detection models (YOLOV5) for AI projects.
-              I was hired as a freelancer at
-              <a href="https://magentrix.com" target="_blank" className="text-blue-500">&nbsp;Magentrix</a> for a few months to build their mobile app, alongside building their new homepages and pricing pages.
-              After this, I began work on an AI-based clothing app,
-              <a href="https://stylegpt.net" target="_blank" className="text-blue-500">&nbsp;MyStylist</a>, where I continue to work.
-              <br /><br />
-              Outside tech, I'm on a weight loss journey through weight lifting and nutrition.
-              I've also returned to music with my successful YouTube channel, 19M.
-              <br /><br />
-              While building PHP Upload, <a href="https://justpix.mangoz1x.com" target="_blank" className="text-blue-500">JustPix</a>, and
-              <a href="https://stylegpt.net" target="_blank" className="text-blue-500">&nbsp;MyStylist</a>, I learned to use Microsoft Azure, Apache, Gravit Design, Figma, MongoDB, Pinecone Vector Search, OpenAI APIs, FedEx, Stripe, and many more technologies. I hope I have sparked your interest!
+              Hey, nice to meet you! Let me tell you a bit more about what got me into computer science.
+              <br/><br/>
+              It all starts with music - something that unites us all. It's everywhere, in every culture, a seemingly random soup of noise that transforms into something beautiful. This fascination with music reflects my broader interest in how things around us work, especially those seemingly random phenomena that surround our daily lives. I use music as an example because it has become so integrated into our lives that we barely notice it anymore, much like technology.
+              <br/><br/>
+              While composing music requires great time and effort, listeners often don't think about the complexity behind it. Google is a perfect technological parallel - the sheer scale at which it operates, the minute details, the suite of products, the speed - these things are often taken for granted, yet they spark my curiosity. I can't help but wonder how people conceived such genius inventions.
+              <br/><br/>
+              Since childhood, I've been exploring as many new things as possible: playing piano, mixing music, coding, science, and even learning random party tricks and facts. I find joy in contemplating these little things that bring us all together. My love for learning has led me to create many cool projects, though many involved tears and "cannot read properties of undefined" errors! But it's the challenge that makes life fun, and doing it alongside others is my favorite part.
+              <br/><br/>
+              Being able to share this love for learning, especially through teaching and helping others, brings me immense joy.
             </p>
           </div>
         </div>
@@ -302,7 +284,7 @@ const Main = () => {
             </div>
 
             <span className="px-5 text-blue-500 font-bold text-xl mt-8">
-              Mini Projects & Dependencies
+              Open Source Projects
             </span>
 
             <div className="flex flex-col w-full h-fit py-5">
@@ -358,7 +340,7 @@ const Main = () => {
 
           <div className="flex flex-col w-full md:w-full lg:w-4/5 xl:w-2/3 p-5 h-fit min-h-screen">
             <h1 className="text-4xl md:text-6xl text-white font-bold p-5">Connect</h1>
-            
+
             <div className="flex grid grid-cols-1 gap-x-2 sm:grid-cols-2">
               <a href="https://github.com/Mangoz1x/" target="_blank" className="btn text-teal-300 bg-teal-400/10 border-none hover:bg-teal-500/10 flex items-center justify-center text-center gap-4 py-3 px-8 w-full h-fit rounded-md transition-all">
                 <BsGithub className="w-4 h-4" />

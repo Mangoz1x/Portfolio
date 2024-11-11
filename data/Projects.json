@@ -1,33 +1,44 @@
 [
     {
-        "title": "Justpix",
-        "description": "A project for people to upload, edit, and select product specifications to print an image.",
+        "title": "JustPix",
+        "description": "Originally a picture-to-print platform, JustPix has evolved into an international marketplace where printers, artists, and influencers can easily set up accounts to offer custom prints. JustPix manages all duties, taxes, and shipping, enabling small businesses to thrive effortlessly on the platform.",
         "github": null,
-        "date": "2022-CURRENT",
-        "languages": ["NextJS", "JavaScript", "MongoDB", "TailwindCSS", "Stripe API", "Fedex API"],
+        "date": "2022 • Ongoing",
+        "languages": ["NextJS", "MongoDB", "TailwindCSS", "Stripe API", "Fedex API"],
         "link": "https://justpix.com",
         "npmjs": null,
         "image": "/images/justpix.PNG",
         "id": 1
     },
     {
-        "title": "MyStylist",
-        "description": "An AI based clothing app. Users scroll through a series of vertically aligned outfits and the algorithm learns your preferences over time. Users can follow others and see what outfits they wore.",
+        "title": "StyleGPT",
+        "description": "An AI-based data platform for clothing. Our scrapers gather data from major clothing brands, including international prices, product descriptions, images, colors, and more. Our APIs enable outfit creation from images, searching and filtering within our dataset, and similar image searches.",
         "github": null,
         "npmjs": null,
         "link": "https://stylegpt.net",
-        "date": "2024-CURRENT",
-        "image": "/images/stylegpt.png",
-        "languages": ["NextJS", "JavaScript", "MongoDB", "TailwindCSS"],
+        "date": "2023 • Ongoing",
+        "image": "/images/stylegpt1.png",
+        "languages": ["NextJS", "MongoDB", "TailwindCSS", "Stripe API", "OpenAI", "Groq", "Web Scraping"],
         "id": 2
+    },
+    {
+        "title": "AIData",
+        "description": "A unique chat-based demo showcasing AIData's semantic call search. The main interface is a chat, where users can ask questions and have the model perform demonstration queries in real-time.",
+        "github": null,
+        "npmjs": null,
+        "link": "https://ai-data.vercel.app",
+        "date": "2024",
+        "image": "/images/aidata.png",
+        "languages": ["NextJS", "Groq", "TailwindCSS"],
+        "id": 2429
     },
     {
         "title": "Magentrix - Web Development",
         "description": "Partner Relationship Management, Customer Success Management, Partner Portal Pricing, and Customer Portal Pricing pages.",
         "github": null,
         "npmjs": null,
-        "link": "https://magentrix.com",
-        "date": "2024-CURRENT",
+        "link": "https://web.archive.org/web/20231203003209/https://www.magentrix.com/",
+        "date": "2024 • Archived",
         "image": "/images/magentrix.png",
         "languages": ["JavaScript", "HTML", "TailwindCSS"],
         "id": "2a"
@@ -48,7 +59,7 @@
         "description": "A NodeJS, MySQL powered file uploading application that allows for multiple CDNs.",
         "github": "https://github.com/Mangoz1x/NodeFileUpload",
         "link": "https://mangoz1x.com",
-        "date": "2021-2022",
+        "date": "2021",
         "languages": ["JavaScript", "MySQL", "MongoDB", "CSS", "HTML"],
         "npmjs": null,
         "image": "/images/mangoz1x.PNG",
@@ -61,7 +72,7 @@
         "languages": ["PHP", "MySQL", "JavaScript", "CSS", "HTML"],
         "npmjs": null,
         "image": "/images/phpupload.PNG",
-        "date": "2020-2021",
+        "date": "2021 • Archived",
         "id": 5
     },
     {
@@ -72,7 +83,7 @@
         "image": "/images/dezar.png",
         "id": 6,
         "npmjs": null,
-        "date": "2021",
+        "date": "2021 • Archived",
         "link": null
     },
     {
@@ -99,7 +110,7 @@
     },
     {
         "title": "MangoDB",
-        "description": "An easy to use MongoDB ORM, async, easily manageable, useful when you want to make changes to the functionality of your database queries without rewriting lots of code.",
+        "description": "A small MongoDB wrapper, async, easily manageable, useful when you want to make changes to the functionality of your database queries without rewriting lots of code. (I named it MangoDB because I love Mangoes)",
         "github": "https://github.com/Mangoz1x/MangoDB",
         "languages": ["MongoDB", "JavaScript"],
         "date": "2022",
@@ -109,8 +120,8 @@
         "id": 9
     },
     {
-        "title": "JsonToSql",
-        "description": "A MySQL ODM, async, easily manageable, useful when you want to make changes to the functionality of your database queries without rewriting lots of code. Makes MySQL queries JSON based for simplicity.",
+        "title": "JSON2SQL",
+        "description": "A simple SQL wrapper, async, easily manageable. Makes MySQL queries JSON based for simplicity.",
         "github": "https://github.com/Mangoz1x/JsonToSql",
         "languages": ["JavaScript", "MySQL"],
         "date": "2022",
