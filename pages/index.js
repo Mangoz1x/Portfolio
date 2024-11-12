@@ -48,9 +48,21 @@ const Main = () => {
     // },
     {
       title: "Software Development",
-      roles: ["Hobby", "2020-CURRENT"],
+      roles: ["Hobby", "2020 • Ongoing"],
       description: "I am currently expanding my knowledge of various technologies, programming languages, and frameworks. I have experience with Next.js, JavaScript, and React Native, and I am proficient in integrating with several platforms and APIs, including Stripe, MongoDB, Pinecone Vector Search, Google Vertex AI, OpenAI, FedEx, and more.",
       aspects: ["Servers", "Networking", "Databases", "Payments"]
+    },
+    {
+      title: "Vercel",
+      roles: ["Experience", "2022 • Ongoing"],
+      description: "Experienced in deploying and managing applications on Vercel, with a developed understanding of its deployment workflows, serverless functions, and performance optimization features.",
+      aspects: ["Vercel", "NextJS"]
+    },
+    {
+      title: "AI & Vector Databases",
+      roles: ["Experience", "2023 • Ongoing"],
+      description: "Experienced in working with Generative AI, Retrieval-Augmented Generation (RAG), and Computer Vision (CV) models, including text embeddings, OpenAI CLIP, and various other advanced models. Skilled in utilizing MongoDB Vector Store and PineconeDB for efficient vector storage and retrieval.",
+      aspects: ["OpenAI", "Clip Image Embeddings", "Text Embeddings", "MongoDB", "Pinecone"]
     },
     // {
     //   title: "AutoCAD & AutoDesk",
@@ -66,7 +78,7 @@ const Main = () => {
     // },
     {
       title: "Computer Hardware",
-      roles: ["Hobby", "2022-CURRENT"],
+      roles: ["Hobby", "2021 • Ongoing"],
       description: "I have experience building with Arduino controllers, Raspberry Pi's and desktop hardware. I have built multiple desktops, and have gained an understanding of the relation between the parts of a computer.",
       aspects: ["Servers", "Computer Hardware", "Arduino", "Raspberry Pi"]
     },
@@ -331,7 +343,6 @@ const Main = () => {
                 </div>
               ))}
             </div>
-
           </div>
         </div>
 
